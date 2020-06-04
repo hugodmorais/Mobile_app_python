@@ -44,6 +44,9 @@ class LoginScreenSuccess(Screen):
     self.manager.transition.direction = "right"
     self.manager.current = "login_screen"
 
+  def get_quote(self, feel):
+    print(feel)
+
 class MainApp(App):
   def build(self):
     return RootWidget()
