@@ -64,7 +64,7 @@ class LoginScreenSuccess(Screen):
     else:
       self.ids.quote.text = "Try another feeling"
 
-class ImageButton(HoverBehavior, Image, ButtonBehavior):
+class ImageButton(ButtonBehavior, HoverBehavior, Image):
   pass
   
 class MainApp(App):
